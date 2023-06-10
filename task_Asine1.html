@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="task_asine_1.js"></script>   
+</head>
+    <title>Task</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="jquery.min.js" ></script>  
+</head>
+</script>
+<style>
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  
+  font-size: medium;
+  background-color: rgb(26, 120, 214);
+  margin-left: 50px;
+
+  
+
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  
+}
+
+#myInput{
+    background-color: crimson;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left:40px ;
+
+
+}
+#heding{
+    margin-left: 50px;
+    border-bottom: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    
+    
+}th{
+    border-bottom: 2px solid;
+    background-color: rgb(98, 85, 218);
+}
+</style>
+
+<body>
+    <h2 id="heding">Task </h2>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+            
+              <h7>Price</h7>: <input type="text" name="id" id="price"><br>
+              <h7>Categ</h7>: <input type="text" name="id" id="category"><br>
+              <h7>Rating</h7>: <input type="text" name="id" id="rating"><br>
+              <h7>Count</h7>: <input type="text" name="id" id="countd"><br>
+             <h7>Image<img src=""</h7>: <input type="text" name="id" id="img"><br> 
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" id="saveUpdate" onclick="saveUpdateData(event)" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--viws data -->
+
+
+
+<div class="modal fade" id="exampleModal_views" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal views</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <h7>Price</h7>: <input type="text" name="id" id="view_price"><br>
+          <h7>Categ</h7>: <input type="text" name="id" id="view_category"><br>
+          <h7>Rating</h7>: <input type="text" name="id" id="view_rating"><br>
+          <h7>Count</h7>: <input type="text" name="id" id="view_countd"><br>
+          <h7>Image<img src=""</h7> <input type="text" name="id" id="view_img"><br> 
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--get dat from api in tabular forms-->
+    <table>
+        <thead>
+        <tr>
+            <th>Product Id</th>
+            <th>Price</th>
+            <th>Category:</th>
+            <th>Rating</th>
+            <th>Count</th>
+            <th>Image</th>
+           <th>Delete * Update * views</th>
+            
+            
+        </tr>
+        </thead>
+
+        <tbody id="myTable">
+        
+        
+        </tbody>
+
+      </table>
+        
+      
+
+
+
+
+
+
+
+</body>
+</html>
